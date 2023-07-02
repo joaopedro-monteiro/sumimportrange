@@ -24,6 +24,13 @@ var escolas = new List<Escola>()
 var stringBuilder = new StringBuilder();
 
 for (int i = 0, celula = 12; i < 33; i++, celula++)
-    stringBuilder.AppendLine($"={string.Join('+', escolas.Select(escola => escola.ImportRange(celula)))}");
+{
+    stringBuilder.Append("=");
+
+    foreach (var escola in escolas)
+        stringBuilder.Append(escola.ImportRange(celula));
+
+    stringBuilder.AppendLine();
+}
 
 File.WriteAllText(@"C:\Users\João Pedro\Documents\in.txt", stringBuilder.ToString());
