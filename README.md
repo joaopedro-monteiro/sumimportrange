@@ -5,7 +5,13 @@
 </head>
 <body>
   <h1>Automação de Cálculos de Materiais de Limpeza para Escolas e Creches</h1>
-  <p>Este repositório contém um projeto que visa automatizar o cálculo das quantidades totais de materiais de limpeza a serem distribuídas entre escolas e creches municipais.</p>
+  <p>Quando trabalhava na Secretaria de Educação de minha cidade, uma das responsabilidades do meu setor consistia em coordenar a entrega mensal de materiais de limpeza para as escolas e creches municipais. Para cada estabelecimento de ensino, era necessário criar um arquivo denominado 'Guia de Remessa', contendo informações da instituição, um campo destinado à assinatura do responsável pelo recebimento dos produtos e uma tabela detalhando os itens e suas respectivas quantidades. As quantidades solicitadas eram registradas por cada diretora em uma planilha do Google Sheets dedicada a esse propósito. Uma imagem exemplificativa dessa planilha pode ser visualizada aqui.
+
+Até esse ponto, o processo transcorria sem maiores dificuldades. Eu disponibilizava o link da planilha para as diretoras, que então preenchiam as quantidades na aba correspondente à sua escola. Em seguida, eu gerava os PDFs, imprimia-os e providenciava a entrega aos responsáveis pela distribuição nas escolas. No entanto, como também era incumbido de efetuar as compras dos materiais, surgia um desafio adicional: calcular a quantidade total gasta em todas as escolas e creches. Para tal, era necessário somar cada item de limpeza de todas as instituições.
+
+Numa abordagem simplificada, eu poderia criar uma nova aba intitulada 'TOTAIS', e manualmente realizar a soma de cada item e escola. No entanto, isso seria uma tarefa árdua e demorada. Nesse contexto, ocorreu-me a ideia de automatizar o processo utilizando a função de soma do Google Sheets. Mas, para minha surpresa, isso também se revelaria trabalhoso. Nesse momento, recordei-me da possibilidade de automatizar o processo de criação da fórmula, em vez de fazê-lo manualmente. A solução seria desenvolver um código em C# que realizasse essa tarefa. Optei por criar um código que fosse funcional e abordável, sem a necessidade de frameworks ou soluções complexas.
+
+Segue abaixo uma descrição ilustrativa desse processo:.</p>
 
   <h2>Funcionalidades</h2>
   <ul>
