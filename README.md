@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Automação de Cálculos - Materiais de Limpeza</title>
 </head>
 <body>
   <h1>Automação de Cálculos de Materiais de Limpeza para Escolas e Creches</h1>
